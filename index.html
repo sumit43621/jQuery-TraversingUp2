@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        div{
+            border: 10px solid red;
+            padding: 10px;
+        }
+        div > ul{
+            border: 10px solid green;
+            padding: 10px;
+        }
+        div > ul > li{
+            border: 10px solid blue;
+            padding: 10px;
+        }
+        div > ul > li > span{
+            display: block;
+            border: 10px solid orange;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<!-- <body>
+    <div>
+        DIV
+        <ul>
+            UL
+            <li>
+                LI
+                <span>Span</span>
+            </li>
+        </ul>
+    </div> -->
+    <div>
+        <div>
+            <ul>
+                <li><span>Hello 1</span></li>
+                <li><span>Hello 2</span></li>
+                <li><span>Hello 3</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
